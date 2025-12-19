@@ -1,0 +1,21 @@
+OC.L10N.register(
+    "talk_desktop",
+    {
+    "Server address" : "хүлээн авагчийн хаяг",
+    "Log in" : "Нэвтрэх",
+    "Dismiss" : "Арилгах",
+    "Advanced" : "нарийвчилсан",
+    "Cancel" : "Цуцлах",
+    "Copy" : "хуулах",
+    "License" : "Тусгай зөвшөөрөл",
+    "Ok" : "За",
+    "Never" : "хэзээч",
+    "Reset" : "тохируулах",
+    "Back" : "Буцах",
+    "Quit" : "Гарах",
+    "Today" : "өнөөдөр",
+    "This week" : "7 хоног",
+    "None" : "юу ч үгүй",
+    "Invisible" : "Үл харагдах"
+},
+"nplurals=2; plural=(n != 1);");

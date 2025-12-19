@@ -1,0 +1,20 @@
+OC.L10N.register(
+    "talk_desktop",
+    {
+    "Server address" : "սերվերի հասցեն",
+    "Log in" : "Մուտք գործել",
+    "Close" : "Փակել",
+    "Security warning" : "Անվտանգության զգուշացում",
+    "Cancel" : "չեղարկել",
+    "Copy" : "Պատճենել",
+    "About" : "Մասին",
+    "License" : "լիցենզիա",
+    "Issues" : "հայց",
+    "Ok" : "Լավ",
+    "No" : "Ոչ",
+    "Yes" : "Այո",
+    "Never" : "Երբեք",
+    "Today" : "Այսօր",
+    "This week" : "այս շաբաթ"
+},
+"nplurals=2; plural=(n != 1);");

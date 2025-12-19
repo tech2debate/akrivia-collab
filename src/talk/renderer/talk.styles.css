@@ -1,0 +1,22 @@
+/*!
+ * SPDX-FileCopyrightText: 2023 Nextcloud GmbH and Nextcloud contributors
+ * SPDX-License-Identifier: AGPL-3.0-or-later
+ */
+
+/*
+ * Overrides default Nextcloud styles
+ */
+
+#content {
+	margin-top: var(--header-height) !important;
+}
+
+/* Remove Nextcloud header specific focus-visible style */
+#header {
+	.button-vue,
+	[role=button] {
+		&:focus-visible::after {
+			content: none !important;
+		}
+	}
+}
