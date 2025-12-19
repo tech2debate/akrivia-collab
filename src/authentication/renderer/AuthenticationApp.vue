@@ -18,9 +18,9 @@ import { BUILD_CONFIG } from '../../shared/build.config.ts'
 import { getCapabilities } from '../../shared/ocs.service.js'
 
 const channel = __CHANNEL__
-
+const defaultAddress = 'https://192.168.0.12:8080'
 const version = __VERSION_TAG__
-const rawServerUrl = ref(BUILD_CONFIG.domain ?? '')
+const rawServerUrl = ref(defaultAddress)
 const enforceDomain = Boolean(BUILD_CONFIG.domain && BUILD_CONFIG.enforceDomain)
 
 const serverUrl = computed(() => {
@@ -80,9 +80,14 @@ async function login() {
 	// Check if valid URL
 	try {
 		// new URL will throw an exception on invalid URL
+		// console.log('serverUrl.value', serverUrl.value, serverUrl)
 		new URL(serverUrl.value)
 	} catch {
 		return setError(t('talk_desktop', 'Invalid server address'))
+	}
+
+	if (serverUrl.value !== defaultAddress) {
+		return setError(t('talk_desktop', 'This server is not supported'))
 	}
 
 	// Check the certificate before actually sending a request
@@ -174,7 +179,7 @@ async function login() {
 						:aria-label="enforceDomain ? t('talk_desktop', 'Server address') : undefined"
 						:label-visible="!enforceDomain"
 						:input-class="{ 'login-box__server--predefined': enforceDomain }"
-						:placeholder="!enforceDomain ? 'https://try.nextcloud.com' : undefined"
+						:placeholder="!enforceDomain ? defaultAddress : undefined"
 						inputmode="url"
 						:readonly="enforceDomain"
 						:success="state === 'success'"

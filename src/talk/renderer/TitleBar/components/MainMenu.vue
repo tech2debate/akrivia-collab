@@ -58,12 +58,12 @@ const openInWeb = () => window.open(generateUrl(getCurrentTalkRoutePath()), '_bl
 			</template>
 			{{ t('talk_desktop', 'Force reload') }}
 		</NcActionButton>
-		<NcActionLink v-if="!BUILD_CONFIG.isBranded" :href="packageInfo.bugs.create || packageInfo.bugs.url" target="_blank">
+		<!-- <NcActionLink v-if="!BUILD_CONFIG.isBranded" :href="packageInfo.bugs.create || packageInfo.bugs.url" target="_blank">
 			<template #icon>
 				<IconBugOutline :size="20" />
 			</template>
 			{{ t('talk_desktop', 'Report a bug') }}
-		</NcActionLink>
+		</NcActionLink> -->
 
 		<NcActionSeparator />
 
@@ -73,11 +73,11 @@ const openInWeb = () => window.open(generateUrl(getCurrentTalkRoutePath()), '_bl
 			</template>
 			{{ t('talk_desktop', 'App settings') }}
 		</NcActionButton>
-		<NcActionButton @click="showHelp">
+		<!-- <NcActionButton @click="showHelp">
 			<template #icon>
 				<IconInformationOutline :size="20" />
 			</template>
 			{{ t('talk_desktop', 'About') }}
-		</NcActionButton>
+		</NcActionButton> -->
 	</NcActions>
 </template>
