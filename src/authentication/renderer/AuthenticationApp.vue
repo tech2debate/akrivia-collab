@@ -19,7 +19,6 @@ import { getCapabilities } from '../../shared/ocs.service.js'
 
 const channel = __CHANNEL__
 const defaultAddress = 'https://192.168.2.68:8080'
-const devIp = 'https://192.168.0.12:8080'
 const version = __VERSION_TAG__
 const rawServerUrl = ref(defaultAddress)
 const enforceDomain = Boolean(BUILD_CONFIG.domain && BUILD_CONFIG.enforceDomain)
@@ -87,7 +86,7 @@ async function login() {
 		return setError(t('talk_desktop', 'Invalid server address'))
 	}
 
-	if (serverUrl.value !== defaultAddress || serverUrl.value !== devIp) {
+	if (serverUrl.value !== defaultAddress) {
 		return setError(t('talk_desktop', 'This server is not supported'))
 	}
 
