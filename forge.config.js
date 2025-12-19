@@ -141,6 +141,32 @@ const hasWindowsSign = !!process.env.WINDOWS_SIGN_PARAMS
 const TALK_PATH = path.resolve(__dirname, process.env.TALK_PATH ?? 'spreed')
 let talkPackageJson
 
+/**
+ * Recursively delete a directory (fallback for older Node versions)
+ *
+ * @param {string} dirPath - Path to the directory to delete
+ */
+function removeDir(dirPath) {
+	if (!fs.existsSync(dirPath)) {
+		return
+	}
+
+	try {
+		const entries = fs.readdirSync(dirPath, { withFileTypes: true })
+		for (const entry of entries) {
+			const fullPath = path.join(dirPath, entry.name)
+			if (entry.isDirectory()) {
+				removeDir(fullPath)
+			} else {
+				fs.unlinkSync(fullPath)
+			}
+		}
+		fs.rmdirSync(dirPath)
+	} catch (err) {
+		console.warn(`Warning: Could not fully remove ${dirPath}: ${err.message}`)
+	}
+}
+
 module.exports = {
 	hooks: {
 		generateAssets() {
@@ -164,6 +190,27 @@ module.exports = {
 
 			if (!fs.existsSync(path.join(TALK_PATH, 'node_modules'))) {
 				throw new Error(`No Nextcloud Talk (spreed repository) dependencies are installed.\nTry to execute \`npm ci --prefix="${TALK_PATH}"\``)
+			}
+		},
+
+		prePackage() {
+			// Clean .webpack directory to prevent Windows EPERM errors during rename operations
+			const webpackDir = path.join(__dirname, '.webpack')
+			if (fs.existsSync(webpackDir)) {
+				console.log('Cleaning .webpack directory before packaging...')
+				try {
+					// Try using fs.rmSync first (Node 14.14.0+)
+					if (fs.rmSync) {
+						fs.rmSync(webpackDir, { recursive: true, force: true, maxRetries: 3, retryDelay: 100 })
+					} else {
+						// Fallback for older Node versions
+						removeDir(webpackDir)
+					}
+					console.log('✓ .webpack directory cleaned successfully')
+				} catch (err) {
+					console.warn(`Warning: Could not fully clean .webpack directory: ${err.message}`)
+					console.warn('You may need to manually close any processes accessing files in .webpack/')
+				}
 			}
 		},
 
