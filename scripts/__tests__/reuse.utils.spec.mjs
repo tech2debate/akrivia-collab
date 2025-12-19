@@ -1,5 +1,5 @@
 /*
- * SPDX-FileCopyrightText: 2025 Nextcloud GmbH and Nextcloud contributors
+ * SPDX-FileCopyrightText: 2025 Akrivia Automation and Nextcloud contributors
  * SPDX-License-Identifier: AGPL-3.0-or-later
  */
 
@@ -14,11 +14,11 @@ Source: https://github.com/nextcloud/server
 
 # Transifex
 Files: .tx/config
-Copyright: 2011-2012 ownCloud, Inc., 2017-2023 Nextcloud GmbH and Nextcloud contributors
+Copyright: 2011-2012 ownCloud, Inc., 2017-2023 Akrivia Automation and Nextcloud contributors
 License: AGPL-3.0-only
 
 Files: .htaccess
-Copyright: 2011-2016 ownCloud, Inc., 2016-2024 Nextcloud GmbH and Nextcloud contributors
+Copyright: 2011-2016 ownCloud, Inc., 2016-2024 Akrivia Automation and Nextcloud contributors
 License: AGPL-3.0-only
 
 Files: core/img/mastodon.svg core/img/actions/mastodon.svg
@@ -34,13 +34,13 @@ SPDX-PackageDownloadLocation = "https://github.com/nextcloud/server"
 [[annotations]]
 path = ".tx/config"
 precedence = "aggregate"
-SPDX-FileCopyrightText = "2011-2012 ownCloud, Inc., 2017-2023 Nextcloud GmbH and Nextcloud contributors"
+SPDX-FileCopyrightText = "2011-2012 ownCloud, Inc., 2017-2023 Akrivia Automation and Nextcloud contributors"
 SPDX-License-Identifier = "AGPL-3.0-only"
 
 [[annotations]]
 path = ".htaccess"
 precedence = "aggregate"
-SPDX-FileCopyrightText = "2011-2016 ownCloud, Inc., 2016-2024 Nextcloud GmbH and Nextcloud contributors"
+SPDX-FileCopyrightText = "2011-2016 ownCloud, Inc., 2016-2024 Akrivia Automation and Nextcloud contributors"
 SPDX-License-Identifier = "AGPL-3.0-only"
 
 [[annotations]]
@@ -59,12 +59,12 @@ const reuseData = {
 	annotations: [
 		{
 			files: ['.tx/config'],
-			copyright: '2011-2012 ownCloud, Inc., 2017-2023 Nextcloud GmbH and Nextcloud contributors',
+			copyright: '2011-2012 ownCloud, Inc., 2017-2023 Akrivia Automation and Nextcloud contributors',
 			license: 'AGPL-3.0-only',
 		},
 		{
 			files: ['.htaccess'],
-			copyright: '2011-2016 ownCloud, Inc., 2016-2024 Nextcloud GmbH and Nextcloud contributors',
+			copyright: '2011-2016 ownCloud, Inc., 2016-2024 Akrivia Automation and Nextcloud contributors',
 			license: 'AGPL-3.0-only',
 		},
 		{

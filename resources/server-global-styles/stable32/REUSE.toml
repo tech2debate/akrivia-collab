@@ -6,37 +6,37 @@ SPDX-PackageDownloadLocation = "https://github.com/nextcloud/server"
 [[annotations]]
 path = ["core/img/loading-dark.gif","core/img/loading-small-dark.gif","core/img/loading-small.gif","core/img/loading.gif"]
 precedence = "aggregate"
-SPDX-FileCopyrightText = "2016 ownCloud, Inc., 2016 Nextcloud GmbH and Nextcloud contributors"
+SPDX-FileCopyrightText = "2016 ownCloud, Inc., 2016 Akrivia Automation and Nextcloud contributors"
 SPDX-License-Identifier = "AGPL-3.0-or-later"
 
 [[annotations]]
 path = ["core/img/favicon**.**","core/img/logo/logo**.**","core/img/apps/spreed.svg"]
 precedence = "aggregate"
-SPDX-FileCopyrightText = "2016-2024 Nextcloud GmbH"
+SPDX-FileCopyrightText = "2016-2024 Akrivia Automation"
 SPDX-License-Identifier = "LicenseRef-NextcloudTrademarks"
 
 [[annotations]]
 path = "core/img/desktopapp.svg"
 precedence = "aggregate"
-SPDX-FileCopyrightText = "2016-2024 Nextcloud GmbH and Nextcloud contributors"
+SPDX-FileCopyrightText = "2016-2024 Akrivia Automation and Nextcloud contributors"
 SPDX-License-Identifier = "AGPL-3.0-or-later"
 
 [[annotations]]
 path = "core/img/filetypes/package-x-generic.svg"
 precedence = "aggregate"
-SPDX-FileCopyrightText = "2016 Nextcloud GmbH and Nextcloud contributors"
+SPDX-FileCopyrightText = "2016 Akrivia Automation and Nextcloud contributors"
 SPDX-License-Identifier = "AGPL-3.0-or-later"
 
 [[annotations]]
 path = ["core/img/actions/checkbox-mixed.svg","core/img/actions/checkmark-white.svg","core/img/actions/checkbox-mark-dark.svg","core/img/actions/checkbox-mark-white.svg","core/img/actions/checkbox-mark.svg","core/img/actions/checkbox-mixed-dark.svg","core/img/actions/checkbox-mixed-white.svg","core/img/actions/checkbox-mixed.svgcore/img/actions/checkmark-white.svg","core/img/actions/checkmark.png","core/img/actions/checkmark.svg"]
 precedence = "aggregate"
-SPDX-FileCopyrightText = "2017 Nextcloud GmbH and Nextcloud contributors"
+SPDX-FileCopyrightText = "2017 Akrivia Automation and Nextcloud contributors"
 SPDX-License-Identifier = "AGPL-3.0-or-later"
 
 [[annotations]]
 path = ["core/img/filetypes/font.svg","core/img/actions/star-rounded.svg"]
 precedence = "aggregate"
-SPDX-FileCopyrightText = "2023 Nextcloud GmbH and Nextcloud contributors"
+SPDX-FileCopyrightText = "2023 Akrivia Automation and Nextcloud contributors"
 SPDX-License-Identifier = "AGPL-3.0-or-later"
 
 [[annotations]]
@@ -108,5 +108,5 @@ SPDX-License-Identifier = "CC-BY-SA-3.0 OR GPL-3.0-or-later"
 [[annotations]]
 path = ["dist/icons.css","apps/theming/theme/light.css","apps/theming/theme/dark.css","apps/theming/theme/light.plain.css","apps/theming/theme/dark.plain.css"]
 precedence = "aggregate"
-SPDX-FileCopyrightText = "2025 Nextcloud GmbH and Nextcloud contributors"
+SPDX-FileCopyrightText = "2025 Akrivia Automation and Nextcloud contributors"
 SPDX-License-Identifier = "AGPL-3.0-or-later"

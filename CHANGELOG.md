@@ -1,5 +1,5 @@
 <!--
-  - SPDX-FileCopyrightText: 2022 Nextcloud GmbH and Nextcloud contributors
+  - SPDX-FileCopyrightText: 2022 Akrivia Automation and Nextcloud contributors
   - SPDX-License-Identifier: CC0-1.0
 -->
 

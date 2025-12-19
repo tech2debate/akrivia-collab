@@ -1,5 +1,5 @@
 /**
- * SPDX-FileCopyrightText: 2025 Nextcloud GmbH and Nextcloud contributors
+ * SPDX-FileCopyrightText: 2025 Akrivia Automation and Nextcloud contributors
  * SPDX-License-Identifier: AGPL-3.0-or-later
  */
 
@@ -176,7 +176,7 @@ export type BuildConfigInferred = {
 	/**
 	 * Copyright string.
 	 * Used in metadata. Cannot be empty.
-	 * Copyright (c) {year} Nextcloud GmbH
+	 * Copyright (c) {year} Akrivia Automation
 	 */
 	copyright: string
 

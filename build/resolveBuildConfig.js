@@ -1,5 +1,5 @@
 /**
- * SPDX-FileCopyrightText: 2025 Nextcloud GmbH and Nextcloud contributors
+ * SPDX-FileCopyrightText: 2025 Akrivia Automation and Nextcloud contributors
  * SPDX-License-Identifier: AGPL-3.0-or-later
  */
 
@@ -56,8 +56,8 @@ function resolveBuildConfig(customConfigPath = process.env.CUSTOM_CONFIG) {
 
 		// Inferred values, cannot be overridden by the custom config
 		isBranded,
-		companyName: isBranded ? config.applicationName : 'Nextcloud GmbH',
-		copyright: (isBranded ? 'Copyright (c) {year}' : 'Copyright (c) {year} Nextcloud GmbH').replace('{year}', new Date().getFullYear()),
+		companyName: isBranded ? config.applicationName : 'Akrivia Automation',
+		copyright: (isBranded ? 'Copyright (c) {year}' : 'Copyright (c) {year} Akrivia Automation').replace('{year}', new Date().getFullYear()),
 		applicationNameSanitized,
 		isPlainBackground: config.backgroundColor !== defaultConfig.backgroundColor,
 		winSquirrelAppId: applicationNameSanitized, // Special case for Squirrel.Windows

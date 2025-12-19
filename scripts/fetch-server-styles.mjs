@@ -1,5 +1,5 @@
 /*!
- * SPDX-FileCopyrightText: 2024 Nextcloud GmbH and Nextcloud contributors
+ * SPDX-FileCopyrightText: 2024 Akrivia Automation and Nextcloud contributors
  * SPDX-License-Identifier: AGPL-3.0-or-later
  */
 
@@ -145,7 +145,7 @@ await spinner('[4/5] Generating REUSE.toml ...', async () => {
 				'apps/theming/theme/light.plain.css',
 				'apps/theming/theme/dark.plain.css',
 			],
-			copyright: `${new Date().getFullYear()} Nextcloud GmbH and Nextcloud contributors`,
+			copyright: `${new Date().getFullYear()} Akrivia Automation and Nextcloud contributors`,
 			license: 'AGPL-3.0-or-later',
 		},
 	]

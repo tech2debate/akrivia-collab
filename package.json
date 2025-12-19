@@ -1,8 +1,8 @@
 {
   "private": true,
-  "name": "talk-desktop",
-  "productName": "Nextcloud Talk",
-  "desktopName": "com.nextcloud.talk.desktop",
+  "name": "akrivia-collab",
+  "productName": "Akrivia Collab",
+  "desktopName": "com.akrivia.collab.desktop",
   "version": "2.0.5",
   "bugs": {
     "url": "https://github.com/nextcloud/talk-desktop/issues",
@@ -10,8 +10,7 @@
   },
   "license": "AGPL-3.0-or-later",
   "author": {
-    "name": "Grigorii K. Shartsev",
-    "email": "me@shgk.me"
+    "name": "Akrivia Automation"
   },
   "main": "./.webpack/main",
   "repository": {

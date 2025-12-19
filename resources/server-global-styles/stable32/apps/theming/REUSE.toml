@@ -6,7 +6,7 @@ SPDX-PackageDownloadLocation = "https://github.com/nextcloud/server"
 [[annotations]]
 path = ["tests/data/favicon-original.ico", "tests/data/touch-comments.png", "tests/data/touch-core-red.png", "tests/data/touch-original-png.png", "tests/data/touch-original.png", "tests/data/touch-testing-red.png"]
 precedence = "aggregate"
-SPDX-FileCopyrightText = "2016 Nextcloud GmbH and Nextcloud contributors"
+SPDX-FileCopyrightText = "2016 Akrivia Automation and Nextcloud contributors"
 SPDX-License-Identifier = "AGPL-3.0-or-later"
 
 [[annotations]]
@@ -18,19 +18,19 @@ SPDX-License-Identifier = "OFL-1.1-RFN"
 [[annotations]]
 path = ["img/dark-highcontrast.jpg", "img/dark.jpg", "img/default-source.svg", "img/default.jpg", "img/light-highcontrast.jpg", "img/light.jpg", "img/opendyslexic.jpg"]
 precedence = "aggregate"
-SPDX-FileCopyrightText = "2022 Nextcloud GmbH and Nextcloud contributors"
+SPDX-FileCopyrightText = "2022 Akrivia Automation and Nextcloud contributors"
 SPDX-License-Identifier = "AGPL-3.0-or-later"
 
 [[annotations]]
 path = ["img/background/jo-myoung-hee-fluid.webp", "img/background/jo-myoung-hee-fluid-dark.webp", "img/background/preview/jo-myoung-hee-fluid.webp"]
 precedence = "aggregate"
-SPDX-FileCopyrightText = "2025 Nextcloud GmbH"
+SPDX-FileCopyrightText = "2025 Akrivia Automation"
 SPDX-License-Identifier = "CC-BY-SA-4.0"
 
 [[annotations]]
 path = ["img/background/jenna-kim-the-globe.webp", "img/background/jenna-kim-the-globe-dark.webp", "img/background/preview/jenna-kim-the-globe.webp"]
 precedence = "aggregate"
-SPDX-FileCopyrightText = "2024 Nextcloud GmbH"
+SPDX-FileCopyrightText = "2024 Akrivia Automation"
 SPDX-License-Identifier = "CC-BY-SA-4.0"
 
 [[annotations]]
